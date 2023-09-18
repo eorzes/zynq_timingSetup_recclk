@@ -1,0 +1,4 @@
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../../m_gth_ex.gen/sources_1/ip/m_gth_vio_0/sim/m_gth_vio_0.vhd" \
+-endlib
+

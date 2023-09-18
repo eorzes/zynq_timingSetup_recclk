@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1691847525">
+  <File Type="ROUTE-PWR" Name="m_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="m_top.tcl"/>
+  <File Type="BITSTR-MMI" Name="m_top.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="m_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="m_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="m_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="m_top_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="m_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="m_top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="m_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="m_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="m_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="m_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="m_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="m_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="m_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="m_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="m_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="m_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="m_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="m_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="m_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="m_top.bin"/>
+  <File Type="PLACE-TIMING" Name="m_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="m_top_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="m_top.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="m_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="m_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="m_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="m_top.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="m_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="m_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="m_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="m_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="m_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="m_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="m_top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="m_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="m_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="m_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="m_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="m_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="m_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="m_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="m_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="m_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="m_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="m_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="m_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="m_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="m_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="m_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="m_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="m_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="m_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="m_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="m_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="m_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="m_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="m_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="m_top.nky"/>
+  <File Type="BITSTR-BMM" Name="m_top_bd.bmm"/>
+  <File Type="PDI-FILE" Name="m_top.pdi"/>
+  <File Type="RCFI_FILE" Name="m_top.rcfi"/>
+  <File Type="CFI_FILE" Name="m_top.cfi"/>
+  <File Type="RNPI_FILE" Name="m_top.rnpi"/>
+  <File Type="NPI_FILE" Name="m_top.npi"/>
+  <File Type="RBD_FILE" Name="m_top.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="m_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="m_top.sysdef"/>
+  <File Type="BG-BGN" Name="m_top.bgn"/>
+  <File Type="BG-DRC" Name="m_top.drc"/>
+  <File Type="RDI-RDI" Name="m_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="m_top_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="m_top_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../src/ip/vio_0/vio_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/bd/system_management/system_management.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/bd/system_interconnect/system_interconnect.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/enc8b10b/asic_encode_8b10b.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../m_gth_ex/imports/gtwizard_ultrascale_v1_7_gthe4_common.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/gt/m_gt_qpll.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../m_gth_ex/imports/m_gth_gthe4_common_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/AXI_lane_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/clock_monitor_full.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/UDP_bridge/MAC_PCS_PMA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/UDP_bridge/UDP_Packet_RX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/UDP_bridge/UDP_Packet_TX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/UDP_bridge/axis_to_axi.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/bit_synch.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/bus_synch.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/UDP_bridge/bus_synchronizer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/cdc_bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/cdc_vec.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/reset_sync.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/freq_meas.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/hb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/clk_buf.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/datagen_check/data_generator.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/gt/gt_buf.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/tclink_phase_detector/dmtd_phase_meas.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/tclink_phase_detector/ddmtd_wrap.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/divide6.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/tclink_phase_detector/gc_extend_pulse.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/tclink_phase_detector/gc_pulse_synchronizer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/tclink_phase_detector/gc_sync_ffs.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/synchronizer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/hysteresis_monostable.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/enc8b10b/multibyte_enc8b10b.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/oddr.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/oddr40.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/bd/system_interconnect/hdl/system_interconnect_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/bd/system_management/hdl/system_management_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/UDP_bridge/udp_bridge.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/gt/gt_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/sys_ctrl/system_control.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/UDP_bridge/AXI_interface.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/datagen_check/data_checker.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/aligner/fsm_aligner.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/utils/utility_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/gt/m_gt.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/sys_man/sys_man_wrap.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/hdl/m_top.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/ip/ila_temp_avg/ila_temp_avg.xci">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/ip/udp_bridge/ila_axi/ila_2.xci">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="m_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../src/xdc/m_top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="MAC_AXIS_ILA"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_interconnect_auto_cc_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="m_gth"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_pcs_pma_62_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_interconnect_auto_cc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="PCS_PMA"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_interconnect_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AXI_I2C"/>
+  <BlockFileSet Type="BlockSrcs" Name="MAC"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_sys"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_interconnect_auto_cc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="UDP_bridge_CDC_FIFO"/>
+  <BlockFileSet Type="BlockSrcs" Name="gearbox_1_to_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Ethernet_Setup_VIO"/>
+  <BlockFileSet Type="BlockSrcs" Name="gearbox_4_to_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_interconnect_auto_cc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_interconnect_auto_cc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_interconnect_auto_cc_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_interconnect_auto_cc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_management_sys_man_wiz_0"/>
+</GenRun>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="AXI_I2C_synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1687170293">
+  <File Type="PA-TCL" Name="AXI_I2C.tcl"/>
+  <File Type="REPORTS-TCL" Name="AXI_I2C_reports.tcl"/>
+  <File Type="RDS-RDS" Name="AXI_I2C.vds"/>
+  <File Type="RDS-UTIL" Name="AXI_I2C_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AXI_I2C_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AXI_I2C.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AXI_I2C">
+    <File Path="$PPRDIR/../../src/ip/AXI_I2C/AXI_I2C.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="AXI_I2C"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AXI_I2C">
+    <File Path="$PPRDIR/../../src/ip/AXI_I2C/AXI_I2C.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="AXI_I2C"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Jun 19 12:31:23 2023
+# Process ID: 15408
+# Current directory: C:/Users/eorzes/cernbox/git/fanout_sma/prj/m_top/m_top.runs/system_interconnect_auto_cc_0_synth_1
+# Command line: vivado.exe -log system_interconnect_auto_cc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_interconnect_auto_cc_0.tcl
+# Log file: C:/Users/eorzes/cernbox/git/fanout_sma/prj/m_top/m_top.runs/system_interconnect_auto_cc_0_synth_1/system_interconnect_auto_cc_0.vds
+# Journal file: C:/Users/eorzes/cernbox/git/fanout_sma/prj/m_top/m_top.runs/system_interconnect_auto_cc_0_synth_1\vivado.jou
+# Running On: PCPHESE71, OS: Windows, CPU Frequency: 3492 MHz, CPU Physical cores: 6, Host memory: 34262 MB
+#-----------------------------------------------------------
+source system_interconnect_auto_cc_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_interconnect_auto_cc_0, cache-ID = 20308d6d1abe1b5b.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 19 12:31:33 2023...

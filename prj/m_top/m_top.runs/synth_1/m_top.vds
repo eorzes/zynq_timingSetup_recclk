@@ -1,0 +1,1442 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Aug 12 15:38:49 2023
+# Process ID: 24520
+# Current directory: C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1
+# Command line: vivado.exe -log m_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source m_top.tcl
+# Log file: C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/m_top.vds
+# Journal file: C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1\vivado.jou
+# Running On: PCPHESE71, OS: Windows, CPU Frequency: 3492 MHz, CPU Physical cores: 6, Host memory: 34262 MB
+#-----------------------------------------------------------
+source m_top.tcl -notrace
+Command: synth_design -top m_top -part xczu9eg-ffvb1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2022.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 50748
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1799.594 ; gain = 324.363
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'rst' is neither a static name nor a globally static expression [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/clk_buf.vhd:49]
+WARNING: [Synth 8-9112] actual for formal port 'rst' is neither a static name nor a globally static expression [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/gt_buf.vhd:69]
+WARNING: [Synth 8-9112] actual for formal port 'd1' is neither a static name nor a globally static expression [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/oddr.vhd:60]
+WARNING: [Synth 8-9903] partially associated formal 'cpllrefclklost_out' cannot have actual OPEN [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:260]
+WARNING: [Synth 8-9903] partially associated formal 'rxbyterealign_out' cannot have actual OPEN [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:265]
+WARNING: [Synth 8-9903] partially associated formal 'rxcommadet_out' cannot have actual OPEN [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:267]
+WARNING: [Synth 8-9903] partially associated formal 'rxctrl0_out' cannot have actual OPEN [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:275]
+WARNING: [Synth 8-9903] partially associated formal 'rxctrl1_out' cannot have actual OPEN [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:276]
+WARNING: [Synth 8-9903] partially associated formal 'rxctrl2_out' cannot have actual OPEN [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:277]
+WARNING: [Synth 8-9903] partially associated formal 'rxctrl3_out' cannot have actual OPEN [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:278]
+WARNING: [Synth 8-9903] partially associated formal 'probe_out1' cannot have actual OPEN [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'm_top' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'bit_synch' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/bit_synch.vhd:15]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'xpm_cdc_single_inst' of component 'xpm_cdc_single' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/bit_synch.vhd:19]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-256] done synthesizing module 'bit_synch' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/bit_synch.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'clk_buf' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/clk_buf.vhd:24]
+INFO: [Synth 8-113] binding component instance 'ibuf_inst' to cell 'IBUFDS' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/clk_buf.vhd:31]
+INFO: [Synth 8-113] binding component instance 'bufg_inst' to cell 'BUFG' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/clk_buf.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'freq_meas' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/freq_meas.vhd:17]
+	Parameter mclk_freq bound to: 125000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reset_sync' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/reset_sync.vhd:37]
+	Parameter RST_ACTIVE_HIGH bound to: 0 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter RST_ACTIVE_HIGH bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_async_rst' declared at 'E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174' bound to instance 'xpm_cdc_async_rst_inst' of component 'xpm_cdc_async_rst' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/reset_sync.vhd:45]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter RST_ACTIVE_HIGH bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-256] done synthesizing module 'reset_sync' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/reset_sync.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'cdc_bit' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/cdc_bit.vhd:17]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at 'E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902' bound to instance 'xpm_inst' of component 'xpm_cdc_array_single' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/cdc_bit.vhd:21]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
+INFO: [Synth 8-256] done synthesizing module 'cdc_bit' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/cdc_bit.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'cdc_vec' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/cdc_vec.vhd:22]
+	Parameter W bound to: 32 - type: integer 
+	Parameter DEST_EXT_HSK bound to: 0 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_SYNC_FF bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_handshake' declared at 'E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468' bound to instance 'xpm_inst' of component 'xpm_cdc_handshake' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/cdc_vec.vhd:73]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+	Parameter DEST_EXT_HSK bound to: 0 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_SYNC_FF bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-256] done synthesizing module 'cdc_vec' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/cdc_vec.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'freq_meas' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/freq_meas.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'hb' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/hb.vhd:22]
+	Parameter freq bound to: 125000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hb' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/hb.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'clk_buf' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/clk_buf.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'data_generator' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/datagen_check/data_generator.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'data_generator' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/datagen_check/data_generator.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'multibyte_enc8b10b' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/enc8b10b/multibyte_enc8b10b.vhd:20]
+INFO: [Synth 8-6157] synthesizing module 'encode' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/enc8b10b/asic_encode_8b10b.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/enc8b10b/asic_encode_8b10b.v:13]
+INFO: [Synth 8-256] done synthesizing module 'multibyte_enc8b10b' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/enc8b10b/multibyte_enc8b10b.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'data_checker' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/datagen_check/data_checker.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'data_checker' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/datagen_check/data_checker.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'm_gt' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'gt_buf' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/gt_buf.vhd:25]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf_inst' to cell 'IBUFDS_GTE4' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/gt_buf.vhd:32]
+INFO: [Synth 8-113] binding component instance 'bufg_inst' to cell 'BUFG_GT' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/gt_buf.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'gt_buf' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/gt_buf.vhd:25]
+INFO: [Synth 8-6157] synthesizing module 'm_gt_qpll' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt_qpll.v:9]
+INFO: [Synth 8-6157] synthesizing module 'm_gth_gthe4_common_wrapper' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_gth_ex/imports/m_gth_gthe4_common_wrapper.v:4]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_13_gthe4_common' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_gth_ex/imports/gtwizard_ultrascale_v1_7_gthe4_common.v:55]
+	Parameter GTHE4_COMMON_AEN_QPLL0_FBDIV bound to: 1'b1 
+	Parameter GTHE4_COMMON_AEN_QPLL1_FBDIV bound to: 1'b1 
+	Parameter GTHE4_COMMON_AEN_SDM0TOGGLE bound to: 1'b0 
+	Parameter GTHE4_COMMON_AEN_SDM1TOGGLE bound to: 1'b0 
+	Parameter GTHE4_COMMON_A_SDM0TOGGLE bound to: 1'b0 
+	Parameter GTHE4_COMMON_A_SDM1DATA_HIGH bound to: 9'b000000000 
+	Parameter GTHE4_COMMON_A_SDM1DATA_LOW bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_A_SDM1TOGGLE bound to: 1'b0 
+	Parameter GTHE4_COMMON_BIAS_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_BIAS_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_BIAS_CFG2 bound to: 16'b0000000100100100 
+	Parameter GTHE4_COMMON_BIAS_CFG3 bound to: 16'b0000000001000001 
+	Parameter GTHE4_COMMON_BIAS_CFG4 bound to: 16'b0000000000010000 
+	Parameter GTHE4_COMMON_BIAS_CFG_RSVD bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_COMMON_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_COMMON_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_POR_CFG bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_PPF0_CFG bound to: 16'b0000011000000000 
+	Parameter GTHE4_COMMON_PPF1_CFG bound to: 16'b0000011000000000 
+	Parameter GTHE4_COMMON_QPLL0CLKOUT_RATE bound to: HALF - type: string 
+	Parameter GTHE4_COMMON_QPLL0_CFG0 bound to: 16'b0011001100011100 
+	Parameter GTHE4_COMMON_QPLL0_CFG1 bound to: 16'b1101000000111000 
+	Parameter GTHE4_COMMON_QPLL0_CFG1_G3 bound to: 16'b1101000000111000 
+	Parameter GTHE4_COMMON_QPLL0_CFG2 bound to: 16'b0000111111000000 
+	Parameter GTHE4_COMMON_QPLL0_CFG2_G3 bound to: 16'b0000111111000000 
+	Parameter GTHE4_COMMON_QPLL0_CFG3 bound to: 16'b0000000100100000 
+	Parameter GTHE4_COMMON_QPLL0_CFG4 bound to: 16'b0000000000000011 
+	Parameter GTHE4_COMMON_QPLL0_CP bound to: 10'b0011111111 
+	Parameter GTHE4_COMMON_QPLL0_CP_G3 bound to: 10'b0000001111 
+	Parameter GTHE4_COMMON_QPLL0_FBDIV bound to: 66 - type: integer 
+	Parameter GTHE4_COMMON_QPLL0_FBDIV_G3 bound to: 160 - type: integer 
+	Parameter GTHE4_COMMON_QPLL0_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter GTHE4_COMMON_QPLL0_INIT_CFG1 bound to: 8'b00000000 
+	Parameter GTHE4_COMMON_QPLL0_LOCK_CFG bound to: 16'b0010010111101000 
+	Parameter GTHE4_COMMON_QPLL0_LOCK_CFG_G3 bound to: 16'b0010010111101000 
+	Parameter GTHE4_COMMON_QPLL0_LPF bound to: 10'b1000111111 
+	Parameter GTHE4_COMMON_QPLL0_LPF_G3 bound to: 10'b0111010101 
+	Parameter GTHE4_COMMON_QPLL0_PCI_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0_RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter GTHE4_COMMON_QPLL0_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter GTHE4_COMMON_QPLL0_SDM_CFG0 bound to: 16'b0000000010000000 
+	Parameter GTHE4_COMMON_QPLL0_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_QPLL0_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_QPLL1CLKOUT_RATE bound to: HALF - type: string 
+	Parameter GTHE4_COMMON_QPLL1_CFG0 bound to: 16'b0011001100011100 
+	Parameter GTHE4_COMMON_QPLL1_CFG1 bound to: 16'b1101000000111000 
+	Parameter GTHE4_COMMON_QPLL1_CFG1_G3 bound to: 16'b1101000000111000 
+	Parameter GTHE4_COMMON_QPLL1_CFG2 bound to: 16'b0000111111000001 
+	Parameter GTHE4_COMMON_QPLL1_CFG2_G3 bound to: 16'b0000111111000001 
+	Parameter GTHE4_COMMON_QPLL1_CFG3 bound to: 16'b0000000100100000 
+	Parameter GTHE4_COMMON_QPLL1_CFG4 bound to: 16'b0000000000000011 
+	Parameter GTHE4_COMMON_QPLL1_CP bound to: 10'b0011111111 
+	Parameter GTHE4_COMMON_QPLL1_CP_G3 bound to: 10'b0001111111 
+	Parameter GTHE4_COMMON_QPLL1_FBDIV bound to: 40 - type: integer 
+	Parameter GTHE4_COMMON_QPLL1_FBDIV_G3 bound to: 80 - type: integer 
+	Parameter GTHE4_COMMON_QPLL1_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter GTHE4_COMMON_QPLL1_INIT_CFG1 bound to: 8'b00000000 
+	Parameter GTHE4_COMMON_QPLL1_LOCK_CFG bound to: 16'b0010010111101000 
+	Parameter GTHE4_COMMON_QPLL1_LOCK_CFG_G3 bound to: 16'b0010010111101000 
+	Parameter GTHE4_COMMON_QPLL1_LPF bound to: 10'b1100111111 
+	Parameter GTHE4_COMMON_QPLL1_LPF_G3 bound to: 10'b0111010100 
+	Parameter GTHE4_COMMON_QPLL1_PCI_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1_RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter GTHE4_COMMON_QPLL1_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter GTHE4_COMMON_QPLL1_SDM_CFG0 bound to: 16'b0000000010000000 
+	Parameter GTHE4_COMMON_QPLL1_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_QPLL1_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_RSVD_ATTR2 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_RSVD_ATTR3 bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_RXRECCLKOUT0_SEL bound to: 2'b00 
+	Parameter GTHE4_COMMON_RXRECCLKOUT1_SEL bound to: 2'b00 
+	Parameter GTHE4_COMMON_SARC_ENB bound to: 1'b0 
+	Parameter GTHE4_COMMON_SARC_SEL bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM0INITSEED0_0 bound to: 16'b0000000100010001 
+	Parameter GTHE4_COMMON_SDM0INITSEED0_1 bound to: 9'b000010001 
+	Parameter GTHE4_COMMON_SDM1INITSEED0_0 bound to: 16'b0000000100010001 
+	Parameter GTHE4_COMMON_SDM1INITSEED0_1 bound to: 9'b000010001 
+	Parameter GTHE4_COMMON_SIM_MODE bound to: FAST - type: string 
+	Parameter GTHE4_COMMON_SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter GTHE4_COMMON_SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter GTHE4_COMMON_BGBYPASSB_VAL bound to: 1'b1 
+	Parameter GTHE4_COMMON_BGMONITORENB_VAL bound to: 1'b1 
+	Parameter GTHE4_COMMON_BGPDB_VAL bound to: 1'b1 
+	Parameter GTHE4_COMMON_BGRCALOVRD_VAL bound to: 5'b11111 
+	Parameter GTHE4_COMMON_BGRCALOVRDENB_VAL bound to: 1'b1 
+	Parameter GTHE4_COMMON_DRPADDR_VAL bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_DRPCLK_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_DRPDI_VAL bound to: 16'b0000000000000000 
+	Parameter GTHE4_COMMON_DRPEN_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_DRPWE_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTGREFCLK0_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTGREFCLK1_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTNORTHREFCLK00_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTNORTHREFCLK01_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTNORTHREFCLK10_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTNORTHREFCLK11_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTREFCLK00_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTREFCLK01_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTREFCLK10_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTREFCLK11_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTSOUTHREFCLK00_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTSOUTHREFCLK01_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTSOUTHREFCLK10_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTSOUTHREFCLK11_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_PCIERATEQPLL0_VAL bound to: 3'b000 
+	Parameter GTHE4_COMMON_PCIERATEQPLL1_VAL bound to: 3'b000 
+	Parameter GTHE4_COMMON_PMARSVD0_VAL bound to: 8'b00000000 
+	Parameter GTHE4_COMMON_PMARSVD1_VAL bound to: 8'b00000000 
+	Parameter GTHE4_COMMON_QPLL0CLKRSVD0_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0CLKRSVD1_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0FBDIV_VAL bound to: 8'b00000000 
+	Parameter GTHE4_COMMON_QPLL0LOCKDETCLK_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0LOCKEN_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0PD_VAL bound to: 1'b1 
+	Parameter GTHE4_COMMON_QPLL0REFCLKSEL_VAL bound to: 3'b001 
+	Parameter GTHE4_COMMON_QPLL0RESET_VAL bound to: 1'b1 
+	Parameter GTHE4_COMMON_QPLL1CLKRSVD0_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1CLKRSVD1_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1FBDIV_VAL bound to: 8'b00000000 
+	Parameter GTHE4_COMMON_QPLL1LOCKDETCLK_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1LOCKEN_VAL bound to: 1'b1 
+	Parameter GTHE4_COMMON_QPLL1PD_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1REFCLKSEL_VAL bound to: 3'b001 
+	Parameter GTHE4_COMMON_QPLL1RESET_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLLRSVD1_VAL bound to: 8'b00000000 
+	Parameter GTHE4_COMMON_QPLLRSVD2_VAL bound to: 5'b00000 
+	Parameter GTHE4_COMMON_QPLLRSVD3_VAL bound to: 5'b00000 
+	Parameter GTHE4_COMMON_QPLLRSVD4_VAL bound to: 8'b00000000 
+	Parameter GTHE4_COMMON_RCALENB_VAL bound to: 1'b1 
+	Parameter GTHE4_COMMON_SDM0DATA_VAL bound to: 25'b0000000000000000000000000 
+	Parameter GTHE4_COMMON_SDM0RESET_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM0TOGGLE_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM0WIDTH_VAL bound to: 2'b00 
+	Parameter GTHE4_COMMON_SDM1DATA_VAL bound to: 25'b0000000000000000000000000 
+	Parameter GTHE4_COMMON_SDM1RESET_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM1TOGGLE_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM1WIDTH_VAL bound to: 2'b00 
+	Parameter GTHE4_COMMON_TCONGPI_VAL bound to: 10'b0000000000 
+	Parameter GTHE4_COMMON_TCONPOWERUP_VAL bound to: 1'b0 
+	Parameter GTHE4_COMMON_TCONRESET_VAL bound to: 2'b00 
+	Parameter GTHE4_COMMON_TCONRSVDIN1_VAL bound to: 2'b00 
+	Parameter GTHE4_COMMON_BGBYPASSB_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_BGMONITORENB_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_BGPDB_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_BGRCALOVRD_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_BGRCALOVRDENB_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_DRPADDR_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_DRPCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_DRPDI_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_DRPEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_DRPWE_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTGREFCLK0_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTGREFCLK1_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTNORTHREFCLK00_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTNORTHREFCLK01_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTNORTHREFCLK10_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTNORTHREFCLK11_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTREFCLK00_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTREFCLK01_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTREFCLK10_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTREFCLK11_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTSOUTHREFCLK00_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTSOUTHREFCLK01_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTSOUTHREFCLK10_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_GTSOUTHREFCLK11_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_PCIERATEQPLL0_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_PCIERATEQPLL1_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_PMARSVD0_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_PMARSVD1_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0CLKRSVD0_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0CLKRSVD1_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0FBDIV_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0LOCKDETCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0LOCKEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0PD_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0REFCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL0RESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1CLKRSVD0_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1CLKRSVD1_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1FBDIV_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1LOCKDETCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1LOCKEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1PD_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1REFCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLL1RESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLLRSVD1_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLLRSVD2_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLLRSVD3_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_QPLLRSVD4_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_RCALENB_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM0DATA_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM0RESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM0TOGGLE_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM0WIDTH_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM1DATA_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM1RESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM1TOGGLE_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_SDM1WIDTH_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_TCONGPI_TIE_EN bound to: 10'b0000000000 
+	Parameter GTHE4_COMMON_TCONPOWERUP_TIE_EN bound to: 1'b0 
+	Parameter GTHE4_COMMON_TCONRESET_TIE_EN bound to: 2'b00 
+	Parameter GTHE4_COMMON_TCONRSVDIN1_TIE_EN bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'GTHE4_COMMON' [E:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:32218]
+	Parameter AEN_QPLL0_FBDIV bound to: 1'b1 
+	Parameter AEN_QPLL1_FBDIV bound to: 1'b1 
+	Parameter AEN_SDM0TOGGLE bound to: 1'b0 
+	Parameter AEN_SDM1TOGGLE bound to: 1'b0 
+	Parameter A_SDM0TOGGLE bound to: 1'b0 
+	Parameter A_SDM1DATA_HIGH bound to: 9'b000000000 
+	Parameter A_SDM1DATA_LOW bound to: 16'b0000000000000000 
+	Parameter A_SDM1TOGGLE bound to: 1'b0 
+	Parameter BIAS_CFG0 bound to: 16'b0000000000000000 
+	Parameter BIAS_CFG1 bound to: 16'b0000000000000000 
+	Parameter BIAS_CFG2 bound to: 16'b0000000100100100 
+	Parameter BIAS_CFG3 bound to: 16'b0000000001000001 
+	Parameter BIAS_CFG4 bound to: 16'b0000000000010000 
+	Parameter BIAS_CFG_RSVD bound to: 16'b0000000000000000 
+	Parameter COMMON_CFG0 bound to: 16'b0000000000000000 
+	Parameter COMMON_CFG1 bound to: 16'b0000000000000000 
+	Parameter POR_CFG bound to: 16'b0000000000000000 
+	Parameter PPF0_CFG bound to: 16'b0000011000000000 
+	Parameter PPF1_CFG bound to: 16'b0000011000000000 
+	Parameter QPLL0CLKOUT_RATE bound to: HALF - type: string 
+	Parameter QPLL0_CFG0 bound to: 16'b0011001100011100 
+	Parameter QPLL0_CFG1 bound to: 16'b1101000000111000 
+	Parameter QPLL0_CFG1_G3 bound to: 16'b1101000000111000 
+	Parameter QPLL0_CFG2 bound to: 16'b0000111111000000 
+	Parameter QPLL0_CFG2_G3 bound to: 16'b0000111111000000 
+	Parameter QPLL0_CFG3 bound to: 16'b0000000100100000 
+	Parameter QPLL0_CFG4 bound to: 16'b0000000000000011 
+	Parameter QPLL0_CP bound to: 10'b0011111111 
+	Parameter QPLL0_CP_G3 bound to: 10'b0000001111 
+	Parameter QPLL0_FBDIV bound to: 66 - type: integer 
+	Parameter QPLL0_FBDIV_G3 bound to: 160 - type: integer 
+	Parameter QPLL0_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter QPLL0_INIT_CFG1 bound to: 8'b00000000 
+	Parameter QPLL0_LOCK_CFG bound to: 16'b0010010111101000 
+	Parameter QPLL0_LOCK_CFG_G3 bound to: 16'b0010010111101000 
+	Parameter QPLL0_LPF bound to: 10'b1000111111 
+	Parameter QPLL0_LPF_G3 bound to: 10'b0111010101 
+	Parameter QPLL0_PCI_EN bound to: 1'b0 
+	Parameter QPLL0_RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter QPLL0_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter QPLL0_SDM_CFG0 bound to: 16'b0000000010000000 
+	Parameter QPLL0_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter QPLL0_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter QPLL1CLKOUT_RATE bound to: HALF - type: string 
+	Parameter QPLL1_CFG0 bound to: 16'b0011001100011100 
+	Parameter QPLL1_CFG1 bound to: 16'b1101000000111000 
+	Parameter QPLL1_CFG1_G3 bound to: 16'b1101000000111000 
+	Parameter QPLL1_CFG2 bound to: 16'b0000111111000001 
+	Parameter QPLL1_CFG2_G3 bound to: 16'b0000111111000001 
+	Parameter QPLL1_CFG3 bound to: 16'b0000000100100000 
+	Parameter QPLL1_CFG4 bound to: 16'b0000000000000011 
+	Parameter QPLL1_CP bound to: 10'b0011111111 
+	Parameter QPLL1_CP_G3 bound to: 10'b0001111111 
+	Parameter QPLL1_FBDIV bound to: 40 - type: integer 
+	Parameter QPLL1_FBDIV_G3 bound to: 80 - type: integer 
+	Parameter QPLL1_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter QPLL1_INIT_CFG1 bound to: 8'b00000000 
+	Parameter QPLL1_LOCK_CFG bound to: 16'b0010010111101000 
+	Parameter QPLL1_LOCK_CFG_G3 bound to: 16'b0010010111101000 
+	Parameter QPLL1_LPF bound to: 10'b1100111111 
+	Parameter QPLL1_LPF_G3 bound to: 10'b0111010100 
+	Parameter QPLL1_PCI_EN bound to: 1'b0 
+	Parameter QPLL1_RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter QPLL1_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter QPLL1_SDM_CFG0 bound to: 16'b0000000010000000 
+	Parameter QPLL1_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter QPLL1_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR2 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR3 bound to: 16'b0000000000000000 
+	Parameter RXRECCLKOUT0_SEL bound to: 2'b00 
+	Parameter RXRECCLKOUT1_SEL bound to: 2'b00 
+	Parameter SARC_ENB bound to: 1'b0 
+	Parameter SARC_SEL bound to: 1'b0 
+	Parameter SDM0INITSEED0_0 bound to: 16'b0000000100010001 
+	Parameter SDM0INITSEED0_1 bound to: 9'b000010001 
+	Parameter SDM1INITSEED0_0 bound to: 16'b0000000100010001 
+	Parameter SDM1INITSEED0_1 bound to: 9'b000010001 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter SIM_MODE bound to: FAST - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTHE4_COMMON' (0#1) [E:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:32218]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_13_gthe4_common' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_gth_ex/imports/gtwizard_ultrascale_v1_7_gthe4_common.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'm_gth_gthe4_common_wrapper' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_gth_ex/imports/m_gth_gthe4_common_wrapper.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'm_gt_qpll' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt_qpll.v:9]
+INFO: [Synth 8-113] binding component instance 'tx_usrclk_bufg_gt' to cell 'BUFG_GT' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:90]
+INFO: [Synth 8-113] binding component instance 'rx_usrclk_bufg_gt' to cell 'BUFG_GT' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'reset_sync__parameterized0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/reset_sync.vhd:37]
+	Parameter RST_ACTIVE_HIGH bound to: 1 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter RST_ACTIVE_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_async_rst' declared at 'E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174' bound to instance 'xpm_cdc_async_rst_inst' of component 'xpm_cdc_async_rst' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/reset_sync.vhd:45]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst__parameterized1' [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter RST_ACTIVE_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst__parameterized1' (0#1) [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-256] done synthesizing module 'reset_sync__parameterized0' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/reset_sync.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'm_gth' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/m_gth_stub.vhdl:96]
+INFO: [Synth 8-256] done synthesizing module 'm_gt' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/gt/m_gt.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'fsm_aligner' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/aligner/fsm_aligner.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'fsm_aligner' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/aligner/fsm_aligner.vhd:47]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b1 
+	Parameter REFCLK_ICNTL_TX bound to: 5'b00111 
+INFO: [Synth 8-113] binding component instance 'obufds_gte4_inst' to cell 'OBUFDS_GTE4' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:440]
+INFO: [Synth 8-638] synthesizing module 'divide6' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/divide6.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'divide6' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/divide6.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'oddr40' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/oddr40.vhd:45]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ODDRE1_txuserclk_inst' to cell 'ODDRE1' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/oddr40.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'oddr40' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/oddr40.vhd:45]
+INFO: [Synth 8-113] binding component instance 'obufds_inst' to cell 'OBUFDS' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:471]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_oddr' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/oddr.vhd:45]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ODDRE1_txuserclk_inst' to cell 'ODDRE1' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/oddr.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_oddr' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/oddr.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'ddmtd_wrap' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/ddmtd_wrap.vhd:32]
+	Parameter in_freq bound to: 240000000.000000 - type: double 
+	Parameter dmtd_freq bound to: 239990000.000000 - type: double 
+	Parameter navg bound to: 12'b000000000001 
+	Parameter deglitch_threshold bound to: 16'b0000101101000000 
+	Parameter g_counter_bits bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dmtd_phase_meas' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_phase_meas.vhd:71]
+	Parameter g_counter_bits bound to: 20 - type: integer 
+	Parameter g_counter_bits bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'dmtd_with_deglitcher' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:44' bound to instance 'DMTD_A' of component 'dmtd_with_deglitcher' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_phase_meas.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'dmtd_with_deglitcher' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:120]
+	Parameter g_counter_bits bound to: 20 - type: integer 
+	Parameter g_sync_edge bound to: positive - type: string 
+INFO: [Synth 8-3491] module 'gc_sync_ffs' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_sync_ffs.vhd:39' bound to instance 'U_Sync_Resync_Pulse' of component 'gc_sync_ffs' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'gc_sync_ffs' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_sync_ffs.vhd:55]
+	Parameter g_sync_edge bound to: positive - type: string 
+INFO: [Synth 8-256] done synthesizing module 'gc_sync_ffs' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_sync_ffs.vhd:55]
+INFO: [Synth 8-3491] module 'gc_pulse_synchronizer' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_pulse_synchronizer.vhd:41' bound to instance 'U_Sync_Start_Pulse' of component 'gc_pulse_synchronizer' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'gc_pulse_synchronizer' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_pulse_synchronizer.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'gc_pulse_synchronizer' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_pulse_synchronizer.vhd:60]
+	Parameter g_sync_edge bound to: positive - type: string 
+INFO: [Synth 8-3491] module 'gc_sync_ffs' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_sync_ffs.vhd:39' bound to instance 'U_Sync_Resync_Done' of component 'gc_sync_ffs' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:210]
+	Parameter g_sync_edge bound to: positive - type: string 
+INFO: [Synth 8-3491] module 'gc_sync_ffs' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_sync_ffs.vhd:39' bound to instance 'U_sync_tag_strobe' of component 'gc_sync_ffs' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:363]
+	Parameter g_width bound to: 3000 - type: integer 
+INFO: [Synth 8-3491] module 'gc_extend_pulse' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_extend_pulse.vhd:44' bound to instance 'U_Extend_Debug_Pulses' of component 'gc_extend_pulse' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:376]
+INFO: [Synth 8-638] synthesizing module 'gc_extend_pulse' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_extend_pulse.vhd:59]
+	Parameter g_width bound to: 3000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gc_extend_pulse' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/gc_extend_pulse.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'dmtd_with_deglitcher' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:120]
+	Parameter g_counter_bits bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'dmtd_with_deglitcher' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_with_deglitcher.vhd:44' bound to instance 'DMTD_B' of component 'dmtd_with_deglitcher' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_phase_meas.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'dmtd_phase_meas' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_phase_meas.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'ddmtd_wrap' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/ddmtd_wrap.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'AXI_interface' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'bus_synch' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/bus_synch.vhd:30]
+	Parameter NBITS bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized1' [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized1' (0#1) [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-256] done synthesizing module 'bus_synch' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/bus_synch.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'system_control' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/sys_ctrl/system_control.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'udp_bridge' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'clk_pcs_pma_62_5' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/clk_pcs_pma_62_5_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'synchronizer' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/synchronizer.vhd:25]
+	Parameter STAGES bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'synchronizer' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/synchronizer.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'mac_pcs_pma' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/MAC_PCS_PMA.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'PCS_PMA' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/PCS_PMA_stub.vhdl:38]
+INFO: [Synth 8-638] synthesizing module 'clock_monitor_full' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/clock_monitor_full.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'clock_monitor_full' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/clock_monitor_full.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'vio_2' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/vio_2_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'MAC' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/MAC_stub.vhdl:45]
+INFO: [Synth 8-256] done synthesizing module 'mac_pcs_pma' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/MAC_PCS_PMA.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'UDP_Packet_RX' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/UDP_Packet_RX.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'UDP_Packet_RX' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/UDP_Packet_RX.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'UDP_Packet_TX' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/UDP_Packet_TX.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'UDP_Packet_TX' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/UDP_Packet_TX.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'UDP_bridge_CDC_FIFO' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/UDP_bridge_CDC_FIFO_stub.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'gearbox_1_to_4' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/gearbox_1_to_4_stub.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'gearbox_4_to_1' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/gearbox_4_to_1_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'axis_to_axi' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/axis_to_axi.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'axis_to_axi' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/axis_to_axi.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'MAC_AXIS_ILA' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/MAC_AXIS_ILA_stub.vhdl:20]
+INFO: [Synth 8-638] synthesizing module 'Ethernet_Setup_VIO' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/Ethernet_Setup_VIO_stub.vhdl:18]
+WARNING: [Synth 8-614] signal 'tx_local_mac_address' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'tx_local_IP_address' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'tx_local_UDP_port' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'tx_remote_UDP_port' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'rx_local_mac_address' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'rx_local_IP_address' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'rx_local_UDP_port' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'rx_remote_UDP_port' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'vio_local_mac_address' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'vio_local_IP_address' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'vio_local_UDP_port' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+WARNING: [Synth 8-614] signal 'vio_remote_UDP_port' is read in the process but is not in the sensitivity list [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'bus_synchronizer' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/bus_synchronizer.vhd:26]
+	Parameter BITS bound to: 48 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bus_synchronizer' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/bus_synchronizer.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'bus_synchronizer__parameterized0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/bus_synchronizer.vhd:26]
+	Parameter BITS bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bus_synchronizer__parameterized0' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/bus_synchronizer.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'bus_synchronizer__parameterized1' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/bus_synchronizer.vhd:26]
+	Parameter BITS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bus_synchronizer__parameterized1' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/bus_synchronizer.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'udp_bridge' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'AXI_I2C' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/AXI_I2C_stub.vhdl:38]
+INFO: [Synth 8-113] binding component instance 'IOBUF_sda' to cell 'IOBUF' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/sys_ctrl/system_control.vhd:220]
+INFO: [Synth 8-113] binding component instance 'IOBUF_scl' to cell 'IOBUF' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/sys_ctrl/system_control.vhd:228]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_wrapper' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/hdl/system_interconnect_wrapper.vhd:280]
+INFO: [Synth 8-3491] module 'system_interconnect' declared at 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:4630' bound to instance 'system_interconnect_i' of component 'system_interconnect' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/hdl/system_interconnect_wrapper.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:4900]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_axi_interconnect_0' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:2999]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_12841IH' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:93]
+INFO: [Synth 8-3491] module 'system_interconnect_auto_cc_0' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_0_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_interconnect_auto_cc_0' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:321]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_auto_cc_0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_0_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_12841IH' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1T4ZQML' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:482]
+INFO: [Synth 8-3491] module 'system_interconnect_auto_cc_1' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_1_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_interconnect_auto_cc_1' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:710]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_auto_cc_1' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_1_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1T4ZQML' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_M52EHT' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:871]
+INFO: [Synth 8-3491] module 'system_interconnect_auto_cc_2' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_2_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_interconnect_auto_cc_2' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:1099]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_auto_cc_2' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_2_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_M52EHT' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:871]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_CFGXC5' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:1260]
+INFO: [Synth 8-3491] module 'system_interconnect_auto_cc_3' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_3_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_interconnect_auto_cc_3' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_auto_cc_3' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_3_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_CFGXC5' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:1260]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_1PS4UBC' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:1649]
+INFO: [Synth 8-3491] module 'system_interconnect_auto_cc_4' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_4_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_interconnect_auto_cc_4' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:1877]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_auto_cc_4' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_4_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_1PS4UBC' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:1649]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1GMNN8C' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:2038]
+INFO: [Synth 8-3491] module 'system_interconnect_auto_cc_5' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_5_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_interconnect_auto_cc_5' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:2266]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_auto_cc_5' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_5_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1GMNN8C' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:2038]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_F7QMZB' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:2425]
+INFO: [Synth 8-3491] module 'system_interconnect_auto_cc_6' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_6_stub.vhdl:5' bound to instance 'auto_cc' of component 'system_interconnect_auto_cc_6' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:2651]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_auto_cc_6' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_auto_cc_6_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_F7QMZB' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:2425]
+INFO: [Synth 8-3491] module 'system_interconnect_xbar_0' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'system_interconnect_xbar_0' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:4377]
+INFO: [Synth 8-638] synthesizing module 'system_interconnect_xbar_0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_interconnect_xbar_0_stub.vhdl:81]
+INFO: [Synth 8-256] done synthesizing module 'system_interconnect_axi_interconnect_0' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:2999]
+INFO: [Synth 8-256] done synthesizing module 'system_interconnect' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/synth/system_interconnect.vhd:4900]
+INFO: [Synth 8-256] done synthesizing module 'system_interconnect_wrapper' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/hdl/system_interconnect_wrapper.vhd:280]
+INFO: [Synth 8-256] done synthesizing module 'system_control' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/sys_ctrl/system_control.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio_0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/axi_gpio_0_stub.vhdl:32]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio_0__parameterized0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/axi_gpio_0_stub.vhdl:32]
+INFO: [Synth 8-638] synthesizing module 'ila_sys' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/ila_sys_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'AXI_interface' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'sys_man_wrap' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/sys_man/sys_man_wrap.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'system_management_wrapper' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/hdl/system_management_wrapper.vhd:22]
+INFO: [Synth 8-3491] module 'system_management' declared at 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/synth/system_management.vhd:14' bound to instance 'system_management_i' of component 'system_management' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/hdl/system_management_wrapper.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'system_management' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/synth/system_management.vhd:26]
+INFO: [Synth 8-3491] module 'system_management_sys_man_wiz_0' declared at 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_management_sys_man_wiz_0_stub.vhdl:5' bound to instance 'sys_man_wiz' of component 'system_management_sys_man_wiz_0' [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/synth/system_management.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'system_management_sys_man_wiz_0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/system_management_sys_man_wiz_0_stub.vhdl:44]
+INFO: [Synth 8-256] done synthesizing module 'system_management' (0#1) [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/synth/system_management.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'system_management_wrapper' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/hdl/system_management_wrapper.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sys_man_wrap' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/sys_man/sys_man_wrap.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'ila_1' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/ila_1_stub.vhdl:15]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/ila_0_stub.vhdl:28]
+INFO: [Synth 8-638] synthesizing module 'vio_0' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/vio_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'vio_1' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/.Xil/Vivado-24520-PCPHESE71/realtime/vio_1_stub.vhdl:15]
+INFO: [Synth 8-638] synthesizing module 'hysteresis_monostable' [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/hysteresis_monostable.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'hysteresis_monostable' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/hysteresis_monostable.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'm_top' (0#1) [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element ctrl_o_reg was removed.  [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/datagen_check/data_checker.vhd:103]
+WARNING: [Synth 8-6014] Unused sequential element test_sr_reg was removed.  [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/datagen_check/data_checker.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element ph_acq_valid_reg was removed.  [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/dmtd_phase_meas.vhd:159]
+WARNING: [Synth 8-3848] Net phase_check_c in module/entity ddmtd_wrap does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/ddmtd_wrap.vhd:25]
+WARNING: [Synth 8-3848] Net phase_hop in module/entity ddmtd_wrap does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/ddmtd_wrap.vhd:26]
+WARNING: [Synth 8-3848] Net freq_gtfan in module/entity ddmtd_wrap does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/ddmtd_wrap.vhd:27]
+WARNING: [Synth 8-3848] Net freq_clnrxusr in module/entity ddmtd_wrap does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/tclink_phase_detector/ddmtd_wrap.vhd:28]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'freq_meas_pcsrxusr2'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/MAC_PCS_PMA.vhd:120]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_clk_free_PCS'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/MAC_PCS_PMA.vhd:132]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'freq_meas_pcsrxusr'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/MAC_PCS_PMA.vhd:126]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Ethernet_Setup_VIO_i'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:432]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bus_synchronizer_remote_mac_address'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:513]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'UDP_Packet_TX_i'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:280]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bus_synchronizer_remote_IP_address'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:523]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mac_pcs_pma_i'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:227]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'MAC_AXIS_ILA_i'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:417]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'UDP_Packet_RX_i'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/udp_bridge.vhd:255]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bus_synch_rx_to_axi'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:84]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sys_i'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:248]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gpio_axi'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:198]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bit_synch_axi_to_tx'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:110]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bit_synch_axi_to_rx'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:104]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'AXI_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:609]
+WARNING: [Synth 8-3848] Net from_axi[pi_ctrl] in module/entity AXI_interface does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:29]
+WARNING: [Synth 8-3848] Net from_axi[hop_gt_tx_rst] in module/entity AXI_interface does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:29]
+WARNING: [Synth 8-3848] Net from_axi[hop_ali_calib] in module/entity AXI_interface does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:29]
+WARNING: [Synth 8-3848] Net from_axi[hop_fine_rea] in module/entity AXI_interface does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:29]
+WARNING: [Synth 8-3848] Net from_axi[hopgt_pi_rstH] in module/entity AXI_interface does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:29]
+WARNING: [Synth 8-3848] Net from_axi[hop_pi_ctrl] in module/entity AXI_interface does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:29]
+WARNING: [Synth 8-3848] Net from_axi[hop_gt_nUI] in module/entity AXI_interface does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/UDP_bridge/AXI_interface.vhd:29]
+WARNING: [Synth 8-6014] Unused sequential element hyst_counter_up_reg was removed.  [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/utils/hysteresis_monostable.vhd:60]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_sys_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:688]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gt_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:314]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_rx_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:721]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mono_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:762]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gen_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:280]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_tx_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:651]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'enc_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:289]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_rx_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:667]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fsm_aligner_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:396]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'check_inst'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:302]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rxusrclk40'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:452]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bit_synch_rx_to_sys'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:417]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bit_synch_rx_to_sys2'. This will prevent further optimization [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:419]
+WARNING: [Synth 8-3848] Net to_axi[hop_acc_phase] in module/entity m_top does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:123]
+WARNING: [Synth 8-3848] Net to_axi[hop_ali_done] in module/entity m_top does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:123]
+WARNING: [Synth 8-3848] Net to_axi[hop_step_done] in module/entity m_top does not have driver. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/hdl/m_top.vhd:123]
+WARNING: [Synth 8-3917] design m_top has port SFP1_enable driven by constant 1
+WARNING: [Synth 8-3917] design m_top has port SFP2_enable driven by constant 1
+WARNING: [Synth 8-7129] Port s_axis_tlast in module axis_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[1] in module axis_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[0] in module axis_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[1] in module axis_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[0] in module axis_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[pi_ctrl][5] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[pi_ctrl][4] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[pi_ctrl][3] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[pi_ctrl][2] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[pi_ctrl][1] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[pi_ctrl][0] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_gt_tx_rst] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_ali_calib] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_fine_rea] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hopgt_pi_rstH] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_pi_ctrl][5] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_pi_ctrl][4] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_pi_ctrl][3] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_pi_ctrl][2] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_pi_ctrl][1] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_pi_ctrl][0] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_gt_nUI][5] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_gt_nUI][4] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_gt_nUI][3] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_gt_nUI][2] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_gt_nUI][1] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port from_axi[hop_gt_nUI][0] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[slide_count][14] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[slide_count][13] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[slide_count][12] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[slide_count][11] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[slide_count][10] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[slide_count][9] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[slide_count][8] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[slide_count][7] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][14] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][13] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][12] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][11] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][10] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][9] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][8] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][7] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][6] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[odds_count][5] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_acc_phase][6] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_acc_phase][5] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_acc_phase][4] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_acc_phase][3] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_acc_phase][2] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_acc_phase][1] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_acc_phase][0] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_ali_done] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_step_done] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[hop_tx_gt_rdy] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][31] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][30] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][29] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][28] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][27] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][26] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][25] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][24] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][23] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][22] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][21] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][20] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][19] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][18] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][17] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][16] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][15] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][14] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][13] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][12] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][11] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][10] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][9] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][8] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][7] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][6] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][5] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][4] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][3] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][2] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][1] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port to_axi[ddmtd_hop][0] in module AXI_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[31] in module ddmtd_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[30] in module ddmtd_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[29] in module ddmtd_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[28] in module ddmtd_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[27] in module ddmtd_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[26] in module ddmtd_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[25] in module ddmtd_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[24] in module ddmtd_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phase_check_c[23] in module ddmtd_wrap is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1948.133 ; gain = 472.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1967.984 ; gain = 492.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1967.984 ; gain = 492.754
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 1980.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_sys_inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_sys_inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/ip/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0_in_context.xdc] for cell 'temp_sense/sys_manager_temp/system_management_i/sys_man_wiz'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/ip/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0_in_context.xdc] for cell 'temp_sense/sys_manager_temp/system_management_i/sys_man_wiz'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_xbar_0/system_interconnect_xbar_0/system_interconnect_xbar_0_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/xbar'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_xbar_0/system_interconnect_xbar_0/system_interconnect_xbar_0_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/xbar'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_6/system_interconnect_auto_cc_6/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_6/system_interconnect_auto_cc_6/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_0/system_interconnect_auto_cc_0/system_interconnect_auto_cc_1_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_0/system_interconnect_auto_cc_0/system_interconnect_auto_cc_1_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_1/system_interconnect_auto_cc_1/system_interconnect_auto_cc_1_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_1/system_interconnect_auto_cc_1/system_interconnect_auto_cc_1_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_2/system_interconnect_auto_cc_2/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_2/system_interconnect_auto_cc_2/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_3/system_interconnect_auto_cc_3/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_3/system_interconnect_auto_cc_3/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_4/system_interconnect_auto_cc_4/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_4/system_interconnect_auto_cc_4/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_5/system_interconnect_auto_cc_5/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_5/system_interconnect_auto_cc_5/system_interconnect_auto_cc_6_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC_AXIS_ILA/MAC_AXIS_ILA/MAC_AXIS_ILA_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC_AXIS_ILA/MAC_AXIS_ILA/MAC_AXIS_ILA_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc] for cell 'gt_inst/ch[0].inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2448.031 ; gain = 29.938
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc] for cell 'gt_inst/ch[0].inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2/vio_2_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/vio_clk_free_PCS'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2/vio_2_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/vio_clk_free_PCS'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2/vio_2_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/vio_clk_sys_refEth'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2/vio_2_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/vio_clk_sys_refEth'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5/clk_pcs_pma_62_5_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5/clk_pcs_pma_62_5_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_sys/ila_sys/ila_sys_in_context.xdc] for cell 'AXI_inst/ila_sys_i'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_sys/ila_sys/ila_sys_in_context.xdc] for cell 'AXI_inst/ila_sys_i'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/AXI_I2C/AXI_I2C/AXI_I2C_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/AXI_I2C_i'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/AXI_I2C/AXI_I2C/AXI_I2C_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/AXI_I2C_i'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'ila_tx_inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'ila_tx_inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/gearbox_1_to_4/gearbox_1_to_4/gearbox_1_to_4_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_1_to_4_RX'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/gearbox_1_to_4/gearbox_1_to_4/gearbox_1_to_4_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_1_to_4_RX'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_1/vio_1/vio_1_in_context.xdc] for cell 'vio_rx_inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_1/vio_1/vio_1_in_context.xdc] for cell 'vio_rx_inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/Ethernet_Setup_VIO/Ethernet_Setup_VIO/Ethernet_Setup_VIO_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/Ethernet_Setup_VIO_i'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/Ethernet_Setup_VIO/Ethernet_Setup_VIO/Ethernet_Setup_VIO_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/Ethernet_Setup_VIO_i'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/gearbox_4_to_1/gearbox_4_to_1/gearbox_4_to_1_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_4_to_1_TX'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/gearbox_4_to_1/gearbox_4_to_1/gearbox_4_to_1_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_4_to_1_TX'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_rx_inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_rx_inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_TX'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_TX'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0/axi_gpio_0_in_context.xdc] for cell 'AXI_inst/gpio_axi'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0/axi_gpio_0_in_context.xdc] for cell 'AXI_inst/gpio_axi'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0/axi_gpio_0_in_context.xdc] for cell 'AXI_inst/gpio_axi_ddmtd'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0/axi_gpio_0_in_context.xdc] for cell 'AXI_inst/gpio_axi_ddmtd'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/MAC/MAC_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/MAC/MAC_in_context.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC'
+Parsing XDC File [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~ *gt_inst*GT*E4_CHANNEL_PRIM_INST}'. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:114]
+WARNING: [Vivado 12-2489] -period contains time 4.166660 which will be rounded to 4.167 to ensure it is an integer multiple of 1 picosecond [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:119]
+WARNING: [Vivado 12-2489] -period contains time 4.166660 which will be rounded to 4.167 to ensure it is an integer multiple of 1 picosecond [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:124]
+WARNING: [Vivado 12-2489] -period contains time 4.166840 which will be rounded to 4.167 to ensure it is an integer multiple of 1 picosecond [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:125]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:130]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hier -filter {NAME =~ gt_inst/ch[0].*/rxoutclk_out[0]}'. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:133]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hier -filter {NAME =~ gt_inst/ch[0].*/txoutclk_out[0]}'. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:134]
+Finished Parsing XDC File [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/m_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/m_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/m_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/m_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/m_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/m_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/m_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/m_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/m_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 66 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2448.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  OBUFDS => OBUFDS: 1 instance 
+  ODDRE1 => OSERDESE3: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 2448.031 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ila_rx_inst' at clock pin 'clk' is different from the actual clock period '4.166', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ila_tx_inst' at clock pin 'clk' is different from the actual clock period '4.166', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'vio_rx_inst' at clock pin 'clk' is different from the actual clock period '4.166', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'vio_sys_inst' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'AXI_inst/gpio_axi' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'AXI_inst/gpio_axi_ddmtd' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'AXI_inst/ila_sys_i' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc' at clock pin 'm_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc' at clock pin 'm_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/udp_bridge_control/Ethernet_Setup_VIO_i' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX' at clock pin 'm_axis_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_TX' at clock pin 'm_axis_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_1_to_4_RX' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_4_to_1_TX' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'AXI_inst/system_ctrl_inst/udp_bridge_control/vio_clk_sys_refEth' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2448.031 ; gain = 972.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2448.031 ; gain = 972.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rx_n. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rx_n. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_rx_p. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_rx_p. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_tx_n. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_tx_n. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for gt_tx_p. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gt_tx_p. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth/m_gth_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for eth_gtrefclk_n. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for eth_gtrefclk_n. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for eth_gtrefclk_p. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for eth_gtrefclk_p. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for rxn_eth_sfp. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rxn_eth_sfp. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for rxp_eth_sfp. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rxp_eth_sfp. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for txn_eth_sfp. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for txn_eth_sfp. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for txp_eth_sfp. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for txp_eth_sfp. (constraint file  c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA/PCS_PMA_in_context.xdc, line 16).
+Applied set_property KEEP_HIERARCHY = SOFT for vio_sys_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for temp_sense/sys_manager_temp/system_management_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for temp_sense/sys_manager_temp/system_management_i/sys_man_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gt_inst/\ch[0].inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/vio_clk_free_PCS. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/vio_clk_sys_refEth. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/ila_sys_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/AXI_I2C_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_tx_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_1_to_4_RX. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vio_rx_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/Ethernet_Setup_VIO_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_4_to_1_TX. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_rx_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_TX. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/gpio_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/gpio_axi_ddmtd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for sys_clk_inst/freq_inst/sync_trig/xpm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gt_inst/gtclk_inst/freq_inst/sync_trig/xpm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/fanout_buf_inst/freq_inst/sync_trig/xpm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/ddmtdclk_buf_inst/freq_inst/sync_trig/xpm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for sys_clk_inst/freq_inst/rst_sync_mclk/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for sys_clk_inst/freq_inst/rst_sync_clk_uut/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gt_inst/gtclk_inst/freq_inst/rst_sync_mclk/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gt_inst/gtclk_inst/freq_inst/rst_sync_clk_uut/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/fanout_buf_inst/freq_inst/rst_sync_mclk/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/fanout_buf_inst/freq_inst/rst_sync_clk_uut/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/ddmtdclk_buf_inst/freq_inst/rst_sync_mclk/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/ddmtdclk_buf_inst/freq_inst/rst_sync_clk_uut/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gt_inst/\ch[0].cmp_rx_buffbypass_reset_synchronizer /xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for sys_clk_inst/freq_inst/sync_freq/xpm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gt_inst/gtclk_inst/freq_inst/sync_freq/xpm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/fanout_buf_inst/freq_inst/sync_freq/xpm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/ddmtdclk_buf_inst/freq_inst/sync_freq/xpm_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bit_synch_sw_to_rx/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bit_synch_sys_to_tx/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fsm_aligner_inst/bit_synch_sys_to_rx/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bit_synch_rx_to_sys/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bit_synch_rx_to_sys2/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/bit_synch_sys/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/bit_synch_dmtd/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bit_synch_axi_to_rx/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bit_synch_axi_to_tx/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[0].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[10].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[11].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[12].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[13].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[14].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[15].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[16].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[17].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[18].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[19].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[1].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[20].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[21].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[22].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[23].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[24].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[25].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[26].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[27].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[28].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[29].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[2].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[30].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[31].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[3].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[4].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[5].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[6].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[7].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[8].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_inst/bus_synch_rx_to_axi/\gen[9].xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for sys_clk_inst/freq_inst/sync_freq/xpm_inst/xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gt_inst/gtclk_inst/freq_inst/sync_freq/xpm_inst/xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/fanout_buf_inst/freq_inst/sync_freq/xpm_inst/xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/ddmtdclk_buf_inst/freq_inst/sync_freq/xpm_inst/xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for sys_clk_inst/freq_inst/sync_freq/xpm_inst/xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gt_inst/gtclk_inst/freq_inst/sync_freq/xpm_inst/xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/fanout_buf_inst/freq_inst/sync_freq/xpm_inst/xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DDMTD_inst/ddmtdclk_buf_inst/freq_inst/sync_freq/xpm_inst/xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2448.031 ; gain = 972.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'cdc_vec__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'cdc_vec__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_aligner'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'cdc_vec__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'cdc_vec'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dmtd_with_deglitcher'
+INFO: [Synth 8-802] inferred FSM for state register 'pd_state_reg' in module 'dmtd_phase_meas'
+INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'UDP_Packet_RX'
+INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'UDP_Packet_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'axis_to_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'sequential' in module 'cdc_vec__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'sequential' in module 'cdc_vec__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    stop |                              000 |                              000
+                  search |                              001 |                              001
+                   reset |                              010 |                              011
+                 aligned |                              011 |                              100
+                   slide |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fsm_aligner'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'sequential' in module 'cdc_vec__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'sequential' in module 'cdc_vec'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           wait_stable_0 |                              001 |                               00
+               wait_edge |                              010 |                               01
+                got_edge |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'dmtd_with_deglitcher'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             pd_wait_tag |                               00 |                               00
+               pd_wait_b |                               01 |                               10
+               pd_wait_a |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pd_state_reg' using encoding 'sequential' in module 'dmtd_phase_meas'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                    eth2 |                              001 |                              001
+                      ip |                              010 |                              010
+                     udp |                              011 |                              011
+                 payload |                              100 |                              100
+         wait_packet_end |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'sequential' in module 'UDP_Packet_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+                 iSTATE4 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'sequential' in module 'UDP_Packet_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+         write_add_store |                              001 |                              001
+     write_add_and_value |                              010 |                              010
+     write_pending_value |                              011 |                              011
+              write_resp |                              100 |                              100
+                read_add |                              101 |                              101
+              read_value |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'sequential' in module 'axis_to_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2448.031 ; gain = 972.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 8     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 3     
+	   3 Input   20 Bit       Adders := 2     
+	   7 Input   20 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   3 Input   18 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 10    
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 7     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 60    
++---Registers : 
+	               48 Bit    Registers := 6     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 37    
+	               24 Bit    Registers := 1     
+	               20 Bit    Registers := 5     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 16    
+	               12 Bit    Registers := 5     
+	               10 Bit    Registers := 253   
+	                8 Bit    Registers := 17    
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 50    
+	                3 Bit    Registers := 204   
+	                2 Bit    Registers := 17    
+	                1 Bit    Registers := 164   
++---Muxes : 
+	   3 Input   48 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 13    
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 2     
+	   2 Input   21 Bit        Muxes := 1     
+	   3 Input   20 Bit        Muxes := 5     
+	   2 Input   20 Bit        Muxes := 2     
+	   5 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 11    
+	   3 Input   16 Bit        Muxes := 4     
+	   4 Input   16 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 3     
+	   7 Input   12 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 8     
+	  20 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   3 Input    6 Bit        Muxes := 2     
+	   6 Input    5 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 12    
+	   6 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 8     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 70    
+	   7 Input    1 Bit        Muxes := 11    
+	   5 Input    1 Bit        Muxes := 13    
+	   3 Input    1 Bit        Muxes := 15    
+	   6 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design m_top has port SFP1_enable driven by constant 1
+WARNING: [Synth 8-3917] design m_top has port SFP2_enable driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 2448.031 ; gain = 972.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gt_inst/ch[0].cmp_rx_buffbypass_reset_synchronizer/xpm_cdc_async_rst_inst/src_arst' to pin 'gt_inst/arst_i0_inferred/i_0/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2504.648 ; gain = 1029.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 2561.375 ; gain = 1086.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin to_axi[hop_tx_gt_rdy]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin hop_gt_stat[gtpowergood]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin hop_gt_stat[txplllock]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin hop_gt_stat[txpmaresetdone]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin hop_gt_stat[rxpmaresetdone]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin axi_gpio_ctrl_rxsynch_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin axi_gpio_ctrl_rxsynch_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin axi_gpio_ctrl_rxsynch_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin axi_gpio_ctrl_rxsynch_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin axi_gpio_ctrl_rxsynch_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin axi_gpio_ctrl_rxsynch_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin axi_gpio_ctrl_rxsynch_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin axi_gpio_ctrl_rxsynch_inferred:in0[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|m_top       | temp_sense/q_array_reg[250][9] | 250    | 10    | NO           | NO                 | YES               | 0      | 80      | 
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |m_gth                           |         1|
+|2     |axi_gpio_0                      |         2|
+|3     |ila_sys                         |         1|
+|4     |AXI_I2C                         |         1|
+|5     |system_interconnect_xbar_0      |         1|
+|6     |system_interconnect_auto_cc_0   |         1|
+|7     |system_interconnect_auto_cc_1   |         1|
+|8     |system_interconnect_auto_cc_2   |         1|
+|9     |system_interconnect_auto_cc_3   |         1|
+|10    |system_interconnect_auto_cc_4   |         1|
+|11    |system_interconnect_auto_cc_5   |         1|
+|12    |system_interconnect_auto_cc_6   |         1|
+|13    |PCS_PMA                         |         1|
+|14    |vio_2                           |         2|
+|15    |MAC                             |         1|
+|16    |clk_pcs_pma_62_5                |         1|
+|17    |UDP_bridge_CDC_FIFO             |         2|
+|18    |gearbox_1_to_4                  |         1|
+|19    |gearbox_4_to_1                  |         1|
+|20    |MAC_AXIS_ILA                    |         1|
+|21    |Ethernet_Setup_VIO              |         1|
+|22    |ila_1                           |         1|
+|23    |ila_0                           |         1|
+|24    |vio_0                           |         1|
+|25    |vio_1                           |         1|
+|26    |system_management_sys_man_wiz_0 |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |AXI_I2C                              |     1|
+|2     |Ethernet_Setup_VIO                   |     1|
+|3     |MAC                                  |     1|
+|4     |MAC_AXIS_ILA                         |     1|
+|5     |PCS_PMA                              |     1|
+|6     |UDP_bridge_CDC_FIFO                  |     2|
+|8     |axi_gpio                             |     1|
+|9     |axi_gpio_0__parameterized0           |     1|
+|10    |clk_pcs_pma_62                       |     1|
+|11    |gearbox_1_to                         |     1|
+|12    |gearbox_4_to                         |     1|
+|13    |ila                                  |     2|
+|15    |ila_sys                              |     1|
+|16    |m_gth                                |     1|
+|17    |system_interconnect_auto_cc_0_bbox   |     1|
+|18    |system_interconnect_auto_cc_1_bbox   |     1|
+|19    |system_interconnect_auto_cc_2_bbox   |     1|
+|20    |system_interconnect_auto_cc_3_bbox   |     1|
+|21    |system_interconnect_auto_cc_4_bbox   |     1|
+|22    |system_interconnect_auto_cc_5_bbox   |     1|
+|23    |system_interconnect_auto_cc_6_bbox   |     1|
+|24    |system_interconnect_xbar_0_bbox      |     1|
+|25    |system_management_sys_man_wiz_0_bbox |     1|
+|26    |vio                                  |     3|
+|29    |vio_2                                |     1|
+|30    |BUFG                                 |     1|
+|31    |BUFG_GT                              |     5|
+|32    |CARRY8                               |   122|
+|33    |GTHE4_COMMON                         |     1|
+|34    |IBUFDS_GTE4                          |     3|
+|35    |LUT1                                 |   117|
+|36    |LUT2                                 |   237|
+|37    |LUT3                                 |   401|
+|38    |LUT4                                 |   181|
+|39    |LUT5                                 |   233|
+|40    |LUT6                                 |   457|
+|41    |MUXF7                                |     8|
+|42    |ODDRE1                               |     2|
+|43    |SRLC32E                              |    80|
+|44    |FDCE                                 |   560|
+|45    |FDPE                                 |     2|
+|46    |FDRE                                 |  2282|
+|47    |FDSE                                 |    59|
+|48    |IBUF                                 |     3|
+|49    |IBUFDS                               |     1|
+|50    |IOBUF                                |     2|
+|51    |OBUF                                 |     3|
+|52    |OBUFDS                               |     1|
+|53    |OBUFDS_GTE4                          |     1|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 132 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 2570.973 ; gain = 615.695
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 2570.973 ; gain = 1095.742
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.162 . Memory (MB): peak = 2570.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC DDMTD_inst/ddmtdclk_buf_inst/BUFG_GT_SYNC for BUFG_GT DDMTD_inst/ddmtdclk_buf_inst/bufg_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC DDMTD_inst/fanout_buf_inst/BUFG_GT_SYNC for BUFG_GT DDMTD_inst/fanout_buf_inst/bufg_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC gt_inst/gtclk_inst/BUFG_GT_SYNC for BUFG_GT gt_inst/gtclk_inst/bufg_inst
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2597.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  ODDRE1 => OSERDESE3: 2 instances
+
+Synth Design complete, checksum: 4df71d33
+INFO: [Common 17-83] Releasing license: Synthesis
+267 Infos, 183 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:46 . Memory (MB): peak = 2597.430 ; gain = 1303.563
+INFO: [Common 17-1381] The checkpoint 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/synth_1/m_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file m_top_utilization_synth.rpt -pb m_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 12 15:41:44 2023...

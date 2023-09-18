@@ -1,0 +1,1473 @@
+
+*** Running vivado
+    with args -log m_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source m_top.tcl -notrace
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source m_top.tcl -notrace
+Command: link_design -top m_top -part xczu9eg-ffvb1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_0/ila_0.dcp' for cell 'ila_rx_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_1/ila_1.dcp' for cell 'ila_tx_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_1/vio_1.dcp' for cell 'vio_rx_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_0/vio_0.dcp' for cell 'vio_sys_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0.dcp' for cell 'AXI_inst/gpio_axi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_sys/ila_sys.dcp' for cell 'AXI_inst/ila_sys_i'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/AXI_I2C/AXI_I2C.dcp' for cell 'AXI_inst/system_ctrl_inst/AXI_I2C_i'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_xbar_0/system_interconnect_xbar_0.dcp' for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_0/system_interconnect_auto_cc_0.dcp' for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_1/system_interconnect_auto_cc_1.dcp' for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_2/system_interconnect_auto_cc_2.dcp' for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_3/system_interconnect_auto_cc_3.dcp' for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_4/system_interconnect_auto_cc_4.dcp' for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_5/system_interconnect_auto_cc_5.dcp' for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_6/system_interconnect_auto_cc_6.dcp' for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/Ethernet_Setup_VIO/Ethernet_Setup_VIO.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/Ethernet_Setup_VIO_i'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC_AXIS_ILA/MAC_AXIS_ILA.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/UDP_bridge_CDC_FIFO/UDP_bridge_CDC_FIFO.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/gearbox_1_to_4/gearbox_1_to_4.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_1_to_4_RX'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/gearbox_4_to_1/gearbox_4_to_1.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/gearbox_4_to_1_TX'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/vio_clk_sys_refEth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/MAC.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA.dcp' for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/m_gth.dcp' for cell 'gt_inst/ch[0].inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/ip/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0.dcp' for cell 'temp_sense/sys_manager_temp/system_management_i/sys_man_wiz'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.872 . Memory (MB): peak = 1564.270 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 734 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: AXI_inst/ila_sys_i UUID: ff1e4af4-9ced-5b0b-b78c-410ac3773551 
+INFO: [Chipscope 16-324] Core: AXI_inst/system_ctrl_inst/udp_bridge_control/Ethernet_Setup_VIO_i UUID: 0536c79b-eeec-5b2a-b0a0-c802189690f8 
+INFO: [Chipscope 16-324] Core: AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i UUID: d3170142-44fe-5920-83d7-8cf575654c5d 
+INFO: [Chipscope 16-324] Core: AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/vio_clk_free_PCS UUID: 00f706b6-3c0e-5c1c-a40a-9f0334c366e0 
+INFO: [Chipscope 16-324] Core: AXI_inst/system_ctrl_inst/udp_bridge_control/vio_clk_sys_refEth UUID: 298188c4-a797-593b-b976-eb293d4a0ccf 
+INFO: [Chipscope 16-324] Core: ila_rx_inst UUID: 6b873848-fd5a-5f46-8b75-7fa0324f066b 
+INFO: [Chipscope 16-324] Core: ila_tx_inst UUID: 5ca58f61-5e4f-5bb4-907a-3bd82ce8a088 
+INFO: [Chipscope 16-324] Core: vio_rx_inst UUID: fd9ecb79-4c10-564b-91eb-62c16927030b 
+INFO: [Chipscope 16-324] Core: vio_sys_inst UUID: 9394241a-84cd-5fb7-b35c-1d5a8a1176e7 
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_0/vio_0.xdc] for cell 'vio_sys_inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_0/vio_0.xdc] for cell 'vio_sys_inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/ip/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0_board.xdc] for cell 'temp_sense/sys_manager_temp/system_management_i/sys_man_wiz/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/ip/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0_board.xdc] for cell 'temp_sense/sys_manager_temp/system_management_i/sys_man_wiz/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/ip/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0.xdc] for cell 'temp_sense/sys_manager_temp/system_management_i/sys_man_wiz/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_management/ip/system_management_sys_man_wiz_0/system_management_sys_man_wiz_0.xdc] for cell 'temp_sense/sys_manager_temp/system_management_i/sys_man_wiz/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC_AXIS_ILA/ila_v6_2/constraints/ila_impl.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC_AXIS_ILA/ila_v6_2/constraints/ila_impl.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC_AXIS_ILA/ila_v6_2/constraints/ila.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC_AXIS_ILA/ila_v6_2/constraints/ila.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/synth/m_gth.xdc] for cell 'gt_inst/ch[0].inst/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/m_gth/synth/m_gth.xdc] for cell 'gt_inst/ch[0].inst/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/vio_clk_free_PCS'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/vio_clk_free_PCS'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/vio_clk_sys_refEth'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/vio_sys/vio_2.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/vio_clk_sys_refEth'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5_board.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5_board.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_sys/ila_v6_2/constraints/ila_impl.xdc] for cell 'AXI_inst/ila_sys_i/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_sys/ila_v6_2/constraints/ila_impl.xdc] for cell 'AXI_inst/ila_sys_i/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_sys/ila_v6_2/constraints/ila.xdc] for cell 'AXI_inst/ila_sys_i/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_sys/ila_v6_2/constraints/ila.xdc] for cell 'AXI_inst/ila_sys_i/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/AXI_I2C/AXI_I2C_board.xdc] for cell 'AXI_inst/system_ctrl_inst/AXI_I2C_i/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/AXI_I2C/AXI_I2C_board.xdc] for cell 'AXI_inst/system_ctrl_inst/AXI_I2C_i/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/ip_0/synth/PCS_PMA_gt.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i/U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gt_i/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/ip_0/synth/PCS_PMA_gt.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i/U0/pcs_pma_block_i/transceiver_inst/PCS_PMA_gt_i/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA_board.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/PCS_PMA_board.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/synth/PCS_PMA_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/synth/PCS_PMA_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_tx_inst/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_tx_inst/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'ila_tx_inst/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'ila_tx_inst/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_1/vio_1.xdc] for cell 'vio_rx_inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/vio_1/vio_1.xdc] for cell 'vio_rx_inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/Ethernet_Setup_VIO/Ethernet_Setup_VIO.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/Ethernet_Setup_VIO_i'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/Ethernet_Setup_VIO/Ethernet_Setup_VIO.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/Ethernet_Setup_VIO_i'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_rx_inst/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_rx_inst/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_rx_inst/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_rx_inst/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0_board.xdc] for cell 'AXI_inst/gpio_axi/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0_board.xdc] for cell 'AXI_inst/gpio_axi/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0_board.xdc] for cell 'AXI_inst/gpio_axi_ddmtd/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0_board.xdc] for cell 'AXI_inst/gpio_axi_ddmtd/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0.xdc] for cell 'AXI_inst/gpio_axi/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0.xdc] for cell 'AXI_inst/gpio_axi/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0.xdc] for cell 'AXI_inst/gpio_axi_ddmtd/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/axi_gpio/axi_gpio_0.xdc] for cell 'AXI_inst/gpio_axi_ddmtd/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/synth/MAC_board.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/synth/MAC_board.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/synth/MAC.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/synth/MAC.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC/U0'
+Parsing XDC File [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc]
+WARNING: [Vivado 12-2489] -period contains time 4.166660 which will be rounded to 4.167 to ensure it is an integer multiple of 1 picosecond [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:119]
+WARNING: [Vivado 12-2489] -period contains time 4.166660 which will be rounded to 4.167 to ensure it is an integer multiple of 1 picosecond [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:124]
+WARNING: [Vivado 12-2489] -period contains time 4.166840 which will be rounded to 4.167 to ensure it is an integer multiple of 1 picosecond [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:125]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:130]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc:130]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2614.977 ; gain = 379.602
+Finished Parsing XDC File [C:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/xdc/m_top.xdc]
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_6/system_interconnect_auto_cc_6_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_6/system_interconnect_auto_cc_6_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_0/system_interconnect_auto_cc_0_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_0/system_interconnect_auto_cc_0_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_1/system_interconnect_auto_cc_1_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_1/system_interconnect_auto_cc_1_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_2/system_interconnect_auto_cc_2_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_2/system_interconnect_auto_cc_2_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_3/system_interconnect_auto_cc_3_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_3/system_interconnect_auto_cc_3_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_4/system_interconnect_auto_cc_4_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_4/system_interconnect_auto_cc_4_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_5/system_interconnect_auto_cc_5_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/bd/system_interconnect/ip/system_interconnect_auto_cc_5/system_interconnect_auto_cc_5_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5_late.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i/inst'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/clk_pcs_pma_62_5/clk_pcs_pma_62_5_late.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i/inst'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/synth/PCS_PMA.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/PCS_PMA/synth/PCS_PMA.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/PCS_PMA_i/U0'
+Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/synth/MAC_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC/U0'
+Finished Parsing XDC File [c:/Users/eorzes/cernbox/git/zynq_rec_fiber/src/ip/udp_bridge/MAC/synth/MAC_clocks.xdc] for cell 'AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC/U0'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-1714] 313 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC gt_inst/ch[0].inst/inst/gen_gtwizard_gthe4_top.m_gth_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT gt_inst/ch[0].rx_usrclk_bufg_gt
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC gt_inst/ch[0].inst/inst/gen_gtwizard_gthe4_top.m_gth_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT gt_inst/tx_usrclk_bufg_gt
+INFO: [Project 1-1687] 18 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2686.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 457 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 312 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  OBUFDS => OBUFDS: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 14 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 98 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 14 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 4 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+
+48 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:43 . Memory (MB): peak = 2686.453 ; gain = 1392.863
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2022.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2686.453 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1d9cb664f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2686.453 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 0b5ce4b5af0887f5.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 2998.473 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 12b355caf
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 2998.473 ; gain = 44.801
+
+Phase 2 Retarget
+INFO: [Opt 31-1287] Pulled Inverter AXI_inst/ila_sys_i/U0/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance AXI_inst/ila_sys_i/U0/ila_core_inst/xsdb_memory_read_inst/read_addr[9]_i_3, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_target_hot[6]_i_1 into driver instance AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_target_hot[6]_i_2__0, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_target_hot[6]_i_1__0 into driver instance AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_target_hot[6]_i_2, which resulted in an inversion of 13 pins
+INFO: [Opt 31-1287] Pulled Inverter AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i/U0/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance AXI_inst/system_ctrl_inst/udp_bridge_control/MAC_AXIS_ILA_i/U0/ila_core_inst/xsdb_memory_read_inst/read_addr[9]_i_3, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst_i_1 into driver instance AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX_i_1, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_TX/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_TX/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC/U0/MAC_core/sync_axi_rx_rstn_rx_clk/async_rst0_i_1__0 into driver instance AXI_inst/system_ctrl_inst/udp_bridge_control/mac_pcs_pma_i/MAC_i_1, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter fsm_aligner_inst/byteAligned_INST_0 into driver instance fsm_aligner_inst/byteAligned_INST_0_i_1, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter ila_rx_inst/U0/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance ila_rx_inst/U0/ila_core_inst/xsdb_memory_read_inst/read_addr[9]_i_3, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter ila_tx_inst/U0/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance ila_tx_inst/U0/ila_core_inst/xsdb_memory_read_inst/read_addr[9]_i_3, which resulted in an inversion of 12 pins
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: aligned
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets aligned]
+INFO: [Opt 31-138] Pushed 57 inverter(s) to 1086 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell AXI_inst/ila_sys_i/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell AXI_inst/ila_sys_i/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1776485d7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:32 . Memory (MB): peak = 2998.473 ; gain = 44.801
+INFO: [Opt 31-389] Phase Retarget created 155 cells and removed 427 cells
+INFO: [Opt 31-1021] In phase Retarget, 611 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 5 load pin(s).
+Phase 3 Constant propagation | Checksum: 14a9d7e2c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 2998.473 ; gain = 44.801
+INFO: [Opt 31-389] Phase Constant propagation created 204 cells and removed 1024 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 663 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 1325a9c98
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 2998.473 ; gain = 44.801
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 4076 cells
+INFO: [Opt 31-1021] In phase Sweep, 5766 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i/inst/freerun_clk_62_5_BUFG_inst to drive 631 load(s) on clock net AXI_inst/system_ctrl_inst/udp_bridge_control/clk_pcs_pma_62_5_i/inst/freerun_clk_62_5_BUFGCE
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 5 BUFG optimization | Checksum: 171ab9a6b
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 2998.473 ; gain = 44.801
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 171ab9a6b
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:37 . Memory (MB): peak = 2998.473 ; gain = 44.801
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 1ea0645f0
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 2998.473 ; gain = 44.801
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 623 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             155  |             427  |                                            611  |
+|  Constant propagation         |             204  |            1024  |                                            663  |
+|  Sweep                        |               0  |            4076  |                                           5766  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            623  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2998.473 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 13312a995
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 2998.473 ; gain = 44.801
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 8 BRAM(s) out of a total of 10 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 10 newly gated: 0 Total Ports: 20
+Ending PowerOpt Patch Enables Task | Checksum: 1fe3ad87c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.252 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1fe3ad87c
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 4214.965 ; gain = 1216.492
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1fe3ad87c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 12309c56d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+97 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:32 . Memory (MB): peak = 4214.965 ; gain = 1528.512
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.163 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1/m_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file m_top_drc_opted.rpt -pb m_top_drc_opted.pb -rpx m_top_drc_opted.rpx
+Command: report_drc -file m_top_drc_opted.rpt -pb m_top_drc_opted.pb -rpx m_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1/m_top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2022.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 104f5928f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 34771b79
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: a539e6a7
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: a539e6a7
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: a539e6a7
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 7efe2c24
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: f674ff8d
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: f674ff8d
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 83b429d4
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 83b429d4
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 2.1.1 Partition Driven Placement | Checksum: 83b429d4
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 2.1 Floorplanning | Checksum: c23c2258
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: c23c2258
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: c23c2258
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 1087 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 523 nets or LUTs. Breaked 0 LUT, combined 523 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 4 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 1 net.  Re-placed 4 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 0 existing cell and moved 4 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            523  |                   523  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            523  |                   524  |           0  |           5  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 1adf53620
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:52 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 170640572
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:53 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 170640572
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:54 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b728b366
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:56 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a36a9cac
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:57 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 20f543a86
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:00 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 1f00f8502
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:00 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 1d91d844d
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:02 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 3.3.3 Slice Area Swap | Checksum: 1d91d844d
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:02 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 3.3 Small Shape DP | Checksum: 1b5e2a68a
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:08 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 15b531395
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:10 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 10ab3db44
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:11 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 10ab3db44
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:11 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: dca1856b
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.179 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: e7efc1be
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.731 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 162ea2bd1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.944 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: dca1856b
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.179. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1b33d4a60
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1b33d4a60
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 29a9d69eb
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:32 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 29a9d69eb
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:32 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 29a9d69eb
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:32 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:32 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 26f46fbdf
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:32 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Ending Placer Task | Checksum: 18157d6a0
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:32 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+137 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:14 ; elapsed = 00:01:45 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1/m_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file m_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file m_top_utilization_placed.rpt -pb m_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file m_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2022.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+147 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1/m_top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2022.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 924dca5d ConstDB: 0 ShapeSum: 7a9ecb8 RouteDB: e7601f8b
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Post Restoration Checksum: NetGraph: ce18d9a7 NumContArr: d5a107e0 Constraints: 9085dae5 Timing: 0
+Phase 1 Build RT Design | Checksum: 2343fbc6c
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2343fbc6c
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2343fbc6c
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 24d85f23b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2b9780b59
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.229  | TNS=0.000  | WHS=-1.240 | THS=-80.346|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 337e02957
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:32 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.229  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 2ce71ac6e
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:32 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00116956 %
+  Global Horizontal Routing Utilization  = 0.000269325 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 25986
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 22590
+  Number of Partially Routed Nets     = 3396
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2b1cc6019
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:34 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2b1cc6019
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:34 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 3 Initial Routing | Checksum: 17f5bd306
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:39 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4428
+ Number of Nodes with overlaps = 452
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+INFO: [Route 35-443] CLB routing congestion detected. Several CLBs have high routing utilization, which can impact timing closure. Congested CLBs and Nets are dumped in: iter_100_CongestedCLBsAndNets.txt
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.243  | TNS=0.000  | WHS=-0.197 | THS=-2.165 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 17534314e
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:37 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 1a8d87657
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:37 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 1a8d87657
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:37 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 27a319b02
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:41 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.243  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 25115a53c
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:41 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 25115a53c
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:41 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 25115a53c
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:41 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2ed6c4ee7
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:44 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.243  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 26b1a25fd
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:44 . Memory (MB): peak = 4214.965 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 26b1a25fd
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:44 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.721861 %
+  Global Horizontal Routing Utilization  = 1.01316 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 2236fa26f
+
+Time (s): cpu = 00:02:18 ; elapsed = 00:01:45 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2236fa26f
+
+Time (s): cpu = 00:02:18 ; elapsed = 00:01:45 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin obufds_gte4_inst/I to physical pin GTHE4_COMMON_X0Y3/RXRECCLK0
+INFO: [Route 35-467] Router swapped GT pin gt_inst/qpll_inst/gthe4_common_wrapper_inst/common_inst/gthe4_common_gen.GTHE4_COMMON_PRIM_INST/GTREFCLK01 to physical pin GTHE4_COMMON_X0Y3/COM2_REFCLKOUT3
+Phase 9 Depositing Routes | Checksum: 2236fa26f
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:48 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 2236fa26f
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:49 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.243  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 2236fa26f
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:01:50 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:01:50 . Memory (MB): peak = 4214.965 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+167 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:32 ; elapsed = 00:02:05 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1/m_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file m_top_drc_routed.rpt -pb m_top_drc_routed.pb -rpx m_top_drc_routed.rpx
+Command: report_drc -file m_top_drc_routed.rpt -pb m_top_drc_routed.pb -rpx m_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1/m_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file m_top_methodology_drc_routed.rpt -pb m_top_methodology_drc_routed.pb -rpx m_top_methodology_drc_routed.rpx
+Command: report_methodology -file m_top_methodology_drc_routed.rpt -pb m_top_methodology_drc_routed.pb -rpx m_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1/m_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file m_top_power_routed.rpt -pb m_top_power_summary_routed.pb -rpx m_top_power_routed.rpx
+Command: report_power -file m_top_power_routed.rpt -pb m_top_power_summary_routed.pb -rpx m_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+179 Infos, 96 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 4214.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file m_top_route_status.rpt -pb m_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file m_top_timing_summary_routed.rpt -pb m_top_timing_summary_routed.pb -rpx m_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file m_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file m_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file m_top_bus_skew_routed.rpt -pb m_top_bus_skew_routed.pb -rpx m_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-167] Found XPM memory block AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_TX/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_TX/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the AXI_inst/system_ctrl_inst/udp_bridge_control/UDP_bridge_CDC_FIFO_RX/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+Command: write_bitstream -force m_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2022.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+CRITICAL WARNING: [Vivado 12-1790] Evaluation License Warning: This design contains one or more IP cores that use separately licensed features. If the design has been configured to make use of evaluation features, please note that these features will cease to function after a certain period of time. Please consult the core datasheet to determine whether the core which you have configured will be affected. Evaluation features should NOT be used in production systems.
+
+Evaluation cores found in this design:
+    IP core 'MAC' (MAC_block) was generated with multiple features:
+        IP feature 'eth_avb_endpoint@2015.04' was enabled using a design_linking license.
+        IP feature 'tri_mode_eth_mac@2015.04' was enabled using a bought license.
+
+Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A2*A5)+(A2*(~A5)*(~A3))+((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A2*A5)+(A2*(~A5)*(~A3))+((~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 513 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, AXI_inst/system_ctrl_inst/system_interconnect_wrapper_i/system_interconnect_i/axi_interconnect/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i... and (the first 15 of 239 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 137583712 bits.
+Writing bitstream ./m_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 4 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:12 ; elapsed = 00:01:07 . Memory (MB): peak = 4350.066 ; gain = 135.102
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 12 15:52:01 2023...

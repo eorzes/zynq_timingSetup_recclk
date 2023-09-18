@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Aug 12 15:41:53 2023
+# Process ID: 52256
+# Current directory: C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1
+# Command line: vivado.exe -log m_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source m_top.tcl -notrace
+# Log file: C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1/m_top.vdi
+# Journal file: C:/Users/eorzes/cernbox/git/zynq_rec_fiber/prj/m_top/m_top.runs/impl_1\vivado.jou
+# Running On: PCPHESE71, OS: Windows, CPU Frequency: 3492 MHz, CPU Physical cores: 6, Host memory: 34262 MB
+#-----------------------------------------------------------
+source m_top.tcl -notrace
